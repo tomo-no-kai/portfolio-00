@@ -5,8 +5,8 @@
 @tailwind utilities;
 
 :root {
-  --color-main: #c2c2c2;
-  --color-sub: #f16fca;
+  --color-main: #ffd4f1;
+  --color-sub: #fc99d6;
 }
 
 html {
