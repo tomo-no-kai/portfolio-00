@@ -1,5 +1,8 @@
 // main.js
 import '../css/style.css'
+import webWorks from '../data/works.json' assert { type: 'json' }
+
+const thumbnails = webWorks.map(work => work.thumbnail)
 
 document.querySelector('#app').innerHTML = `
   <section class="fixed top-0 left-0 w-full md:w-[420px] md:left-1/2 md:-translate-x-1/2 h-screen bg-main z-0">
@@ -24,9 +27,9 @@ document.querySelector('#app').innerHTML = `
     <section id="works" class="relative px-8 pt-10 pb-10">
       <h2 class="text-5xl text-sub mb-10 font-extralight">WORKS</h2>
       <div class="space-y-6">
-        <div class="relative group cursor-pointer shadow-sm">
-          <div class="aspect-[16/8] bg-[#d9d9d9] flex items-center justify-center text-white text-3xl tracking-[0.2em] font-light rounded-sm group-hover:scale-[1.02] duration-500"></div>
-        </div>
+      <div id="works-slideshow"
+        class="aspect-[16/8] relative overflow-hidden rounded-sm group-hover:scale-[1.02] duration-500">
+      </div>
         <a href="works.html" class="text-center block pt-2 border-2 border-sub text-[14px] px-6 py-2 uppercase rounded-sm
           text-white bg-sub hover:text-sub hover:bg-white transition-colors duration-500">
           view all
@@ -153,3 +156,29 @@ function scrollIndicator() {
     </div>
   `
 }
+
+// スライドショー
+
+const container = document.getElementById('works-slideshow')
+
+thumbnails.forEach((src, index) => {
+  const img = document.createElement('img')
+  img.src = src
+  img.className =
+    'absolute inset-0 w-full h-full object-cover transition-opacity duration-700'
+  img.classList.add(index === 0 ? 'opacity-100' : 'opacity-0')
+  container.appendChild(img)
+})
+
+const slides = container.querySelectorAll('img')
+let current = 0
+
+setInterval(() => {
+  slides[current].classList.remove('opacity-100')
+  slides[current].classList.add('opacity-0')
+
+  current = (current + 1) % slides.length
+
+  slides[current].classList.remove('opacity-0')
+  slides[current].classList.add('opacity-100')
+}, 3000)
