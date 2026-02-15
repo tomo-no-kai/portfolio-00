@@ -2,8 +2,8 @@
 export class GraphicModal {
   constructor() {
     this.modal = document.createElement('div')
-    // 背景：黒の40%透過 + 強めのぼかし
-    this.modal.className = 'fixed inset-0 bg-black/40 backdrop-blur-md flex items-center justify-center z-[100] hidden opacity-0 transition-opacity duration-300 p-4'
+    // 背景
+    this.modal.className = 'fixed inset-0 bg-black/20 backdrop-blur-md flex items-center justify-center z-[100] hidden opacity-0 transition-opacity duration-300 p-4'
     
     this.modal.innerHTML = `
     <div id="gm-content" class="w-full max-w-4xl mx-auto flex flex-col items-center transform scale-95 opacity-0 transition-all duration-500">

@@ -1,26 +1,50 @@
 [
   {
+    "id": "sunny-ribbon",
     "title": "SUNNY RIBBON DINER",
     "category": ["WEB", "GRAPHIC", "PLANNING"],
     "thumbnail": "/works/SD-thumb.png",
-    "page": "https://tomo-no-kai.github.io/sunnyribbon-diner/index.html"
+    "catchphrase": "アメ村で発見、古着と共に楽しむアメリカンカフェタイム。",
+    "description": "90年代アメリカのダイナーと00年代日本の平成レトロをミックスして、現代風にアレンジしたカフェのサイトです。<br>ロゴ制作からWebサイトの構築、メニュー表のグラフィックまで一貫して担当しました。<br>トーンマナーに気を配り、ブランディング価値を最大限高められるよう制作しました。",
+    "images": [
+      "/works/SD-thumb.png"
+    ],
+    "page": "https://tomo-no-kai.github.io/sunnyribbon-diner/index.html" 
   },
   {
+    "id": "mimamorumi",
     "title": "みまもるみ",
     "category": ["WEB", "PLANNING"],
     "thumbnail": "/works/MM-thumb.png",
+    "catchphrase": "あなたを見守る、みまもるみ。",
+    "description": "スマホ用セルフケアアプリ。<br>セルフケアに対する心理的ハードルを下げることを目標に制作しました。<br>あなたの日々を見守ってくれるキャラクター、「みまもるみ」の圧のないビジュアルと、画面の下半分に操作ボタンを集約した、片手でつかいやすいUIがアピールポイントです。",
+    "images": [
+      "/works/MM-thumb.png"
+    ],
     "page": "https://mimamorumi-l9ek.vercel.app/"
   },
   {
+    "id": "tamenet",
     "title": "ためねっと",
     "category": ["WEB", "PLANNING"],
     "thumbnail": "/works/TN-thumb.png",
+    "catchphrase": "たのしく おこづかい名人に なろう！",
+    "description": "子ども用の簡易家計簿サイト。<br>家計簿という堅いイメージのあるモチーフを、あたたかいビジュアルとにぎやかなアニメーションで子ども向けに落とし込みました。<br>軽快な操作感にこだわり、子どもの「できた」が生まれるUIを意識しました。",
+    "images": [
+      "/works/TN-thumb.png"
+    ],
     "page": "https://tomo-no-kai.github.io/tamenet/"
   },
   {
+    "id": "glucosamine-lp",
     "title": "グルコサミンLP (非公式)",
     "category": ["WEB"],
     "thumbnail": "/works/GR-thumb.png",
+    "catchphrase": "スムーズな毎日のために、デザインができること。",
+    "description": "健康食品のランディングページを独自の視点でリデザイン。信頼感を与える配色と、ユーザーの悩みに寄り添った情報の優先順位設計を徹底しました。",
+    "images": [
+      "/works/GR-thumb.png"
+    ],
     "page": "https://www.figma.com/proto/hMmtij7CFa4ICjZAW3IqqV/%E3%82%B0%E3%83%AB%E3%82%B3%E3%82%B5%E3%83%9F%E3%83%B3-lp?page-id=0%3A1&node-id=10-16&p=f&viewport=50%2C284%2C0.15&t=PECSaBYcFyQ0wrxe-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=10%3A16"
   }
 ]

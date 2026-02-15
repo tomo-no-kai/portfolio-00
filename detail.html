@@ -1,0 +1,105 @@
+<!-- detail.html -->
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Work Detail | Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/src/css/style.css" />
+        <script type="module" src="/src/js/components/loading.js"></script>
+        <script type="module" src="/src/js/components/star.js"></script>
+        <script type="module" src="/src/js/detail.js"></script>
+    </head>
+    <body
+        class="bg-main md:grid md:grid-cols-[1fr_420px_1fr] min-h-screen overflow-x-hidden"
+    >
+        <aside class="hidden md:block"></aside>
+
+        <div class="relative md:col-start-2 md:col-end-3">
+            <main class="relative z-10 bg-white min-h-screen flex flex-col">
+                <div class="mb-10 -mx-8">
+                    <img
+                        id="thumbnail"
+                        src=""
+                        alt=""
+                        class="w-full h-auto object-cover border-b-2 border-sub"
+                    />
+                </div>
+                <article class="relative px-8 pt-8 pb-20 flex-grow">
+                    <header class="pb-6">
+                        <p
+                            id="category"
+                            class="text-gray-400 text-[10px] tracking-[0.3em] font-bold uppercase mb-2"
+                        >
+                            Category Name
+                        </p>
+                        <h1
+                            id="title"
+                            class="text-3xl text-gray-600 font-extralight tracking-tighter leading-tight uppercase"
+                        >
+                            Project Title
+                        </h1>
+                    </header>
+
+                    <div class="pt-2 pb-2">
+                        <h2
+                            id="catchphrase"
+                            class="text-lg text-sub font-medium leading-relaxed italic border-l-2 border-sub pl-4"
+                        >
+                            Catchphrase goes here.
+                        </h2>
+                    </div>
+
+                    <div class="mb-16">
+                        <p
+                            id="description"
+                            class="text-gray-700 leading-loose font-light pt-6 text-[11px] leading-[2.2] space-y-6 max-w-sm"
+                        >
+                            ここに制作の背景や想いが入ります。
+                        </p>
+                    </div>
+
+                    <section>
+                        <div
+                            id="detail-visual-grid"
+                            class="grid grid-cols-1 gap-4 mt-8"
+                        ></div>
+                    </section>
+
+                    <div class="relative mt-20 z-10">
+                        <a
+                            href="javascript:history.back();"
+                            class="text-center block pt-2 border-2 border-sub text-[14px] px-6 py-2 uppercase rounded-sm text-white bg-sub hover:text-sub hover:bg-white transition-colors duration-500"
+                        >
+                            Back to Works
+                        </a>
+                    </div>
+                </article>
+
+                <footer
+                    class="relative bg-main pt-24 pb-12 text-center text-white text-[10px] tracking-[0.3em]"
+                >
+                    <div
+                        class="absolute -top-[100px] left-0 w-full rotate-180 overflow-hidden leading-none pointer-events-none"
+                    >
+                        <img src="/wave.svg" class="w-full h-40 object-cover" />
+                    </div>
+                    <p
+                        class="font-medium opacity-80 uppercase tracking-widest font-light"
+                    >
+                        © Kanno Tomoka 2026
+                    </p>
+                </footer>
+            </main>
+        </div>
+
+        <aside class="hidden md:block"></aside>
+    </body>
+</html>
