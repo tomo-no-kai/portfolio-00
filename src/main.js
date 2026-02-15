@@ -25,17 +25,13 @@ document.querySelector('#app').innerHTML = `
       <h2 class="text-5xl text-main mb-12 font-extralight">WORKS</h2>
       <div id="works" class="space-y-6">
         <div class="relative group cursor-pointer shadow-sm hover:shadow-md transition-shadow">
-          <div class="aspect-[16/7] bg-[#d9d9d9] flex items-center justify-center text-white text-3xl tracking-[0.2em] font-light">WEB</div>
-          <div class="absolute bottom-0 right-0 bg-main text-white text-[10px] px-6 py-1 uppercase font-light">Tap</div>
+          <div class="aspect-[16/8] bg-[#d9d9d9] flex items-center justify-center text-white text-3xl tracking-[0.2em] font-light"></div>
         </div>
-        <div class="relative group cursor-pointer shadow-sm hover:shadow-md transition-shadow">
-          <div class="aspect-[16/7] bg-[#d9d9d9] flex items-center justify-center text-white text-3xl tracking-[0.2em] font-light">GRAPHIC</div>
-          <div class="absolute bottom-0 right-0 bg-main text-white text-[10px] px-6 py-1 uppercase font-light">Tap</div>
-        </div>
+        <div class="text-center pt-2 bg-main text-white text-[14px] px-6 py-2 uppercase">view all</div>
       </div>
     </section>
 
-    <section class="px-8 py-10 bg-neutral-50/50">
+    <section class="px-8 py-12 bg-neutral-50/50">
       <h2 class="text-5xl text-main mb-12 tracking-tighter font-extralight">ABOUT</h2>
       <div class="space-y-1">
         <p class="text-[10px] font-bold text-gray-800 tracking-[0.2em] uppercase font-extralight">Kanno Tomoka</p>
@@ -80,7 +76,7 @@ document.querySelector('#app').innerHTML = `
       </div>
     </section>
 
-    <section class="px-8 py-10 pb-20 relative z-10">
+    <section class="px-8 py-12 pb-20 relative z-10">
       <h2 class="text-5xl text-main mb-10 font-extralight">CONTACT</h2>
       <div class="space-y-2 text-sm">
         <p class="flex items-center gap-4">
