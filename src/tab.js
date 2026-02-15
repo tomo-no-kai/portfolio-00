@@ -47,12 +47,12 @@ document.addEventListener('DOMContentLoaded', () => {
     <!-- モバイルメニュー -->
     <nav 
       id="mobile-menu"
-      class="fixed top-24 right-0 z-40 w-40 bg-white/80 backdrop-blur-md p-6 transform translate-x-full transition-transform duration-500 ease-in-out rounded-sm"
+      class="fixed top-24 right-0 z-40 w-36 bg-white/80 backdrop-blur-md p-6 transform translate-x-full transition-transform duration-500 ease-in-out rounded-sm"
     >
       <div class="flex flex-col space-y-6 text-right pt-2">
-        <a href="#works" onclick="toggleMenu()" class="text-sub text-xl font-extralight tracking-[0.2em] hover:opacity-50 transition-opacity uppercase">Works</a>
-        <a href="#about" onclick="toggleMenu()" class="text-sub text-xl font-extralight tracking-[0.2em] hover:opacity-50 transition-opacity uppercase">About</a>
-        <a href="#contact" onclick="toggleMenu()" class="text-sub text-xl  font-extralight tracking-[0.2em] hover:opacity-50 transition-opacity uppercase">Contact</a>
+        <a href="#works" onclick="toggleMenu()" class="text-sub text-xl font-extralight hover:opacity-50 transition-opacity uppercase">Works</a>
+        <a href="#about" onclick="toggleMenu()" class="text-sub text-xl font-extralight hover:opacity-50 transition-opacity uppercase">About</a>
+        <a href="#contact" onclick="toggleMenu()" class="text-sub text-xl  font-extralight hover:opacity-50 transition-opacity uppercase">Contact</a>
       </div>
     </nav>
   `;
