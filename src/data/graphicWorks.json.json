@@ -2,31 +2,31 @@
   {
     "title": "道南いちごミルク",
     "category": ["GRAPHIC","PLANNING"],
-    "thumbnails": ["src/assets/works/G-milk-thumb.PNG"],
+    "thumbnails": ["/works/G-milk-thumb.PNG"],
     "page": "#"
   },
   {
     "title": "とらやチラシ(非公式)",
     "category": ["GRAPHIC"],
-    "thumbnails": ["src/assets/works/G-toraya-thumb.png"],
+    "thumbnails": ["/works/G-toraya-thumb.png"],
     "page": "#"
   },
   {
     "title": "美専祭作品募集ポスター",
     "category": ["GRAPHIC"],
-    "thumbnails": ["src/assets/works/G-bisen-thumb.PNG"],
+    "thumbnails": ["/works/G-bisen-thumb.PNG"],
     "page": "#"
   },
   {
     "title": "ぬいぐるみ病院リーフレット(非公式)",
     "category": ["GRAPHIC"],
-    "thumbnails": ["src/assets/works/G-mituori-thumb.png"],
+    "thumbnails": ["/works/G-mituori-thumb.png"],
     "page": "#"
   },
   {
     "title": "だっこあらポーチ",
     "category": ["GRAPHIC","PLANNING"],
-    "thumbnails": ["src/assets/works/G-kikaku-thumb.PNG"],
+    "thumbnails": ["/works/G-kikaku-thumb.PNG"],
     "page": "#"
   }
 ]
