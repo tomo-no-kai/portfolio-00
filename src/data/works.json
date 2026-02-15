@@ -1,0 +1,26 @@
+[
+  {
+    "title": "SUNNY RIBBON DINER",
+    "category": ["WEB", "GRAPHIC", "PLANNING"],
+    "thumbnail": "src/assets/works/SD-thumb.png",
+    "page": "https://tomo-no-kai.github.io/sunnyribbon-diner/index.html"
+  },
+  {
+    "title": "みまもるみ",
+    "category": ["WEB", "PLANNING"],
+    "thumbnail": "src/assets/works/MM-thumb.png",
+    "page": "https://mimamorumi-l9ek.vercel.app/"
+  },
+  {
+    "title": "ためねっと",
+    "category": ["WEB", "PLANNING"],
+    "thumbnail": "src/assets/works/TN-thumb.png",
+    "page": "https://tomo-no-kai.github.io/tamenet/"
+  },
+  {
+    "title": "グルコサミンLP (非公式)",
+    "category": ["WEB"],
+    "thumbnail": "src/assets/works/GR-thumb.png",
+    "page": "https://www.figma.com/proto/hMmtij7CFa4ICjZAW3IqqV/%E3%82%B0%E3%83%AB%E3%82%B3%E3%82%B5%E3%83%9F%E3%83%B3-lp?page-id=0%3A1&node-id=10-16&p=f&viewport=50%2C284%2C0.15&t=PECSaBYcFyQ0wrxe-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=10%3A16"
+  }
+]
