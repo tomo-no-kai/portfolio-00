@@ -14,14 +14,20 @@
         />
     </head>
     <body
-        class="bg-neutral-100 md:grid md:grid-cols-[1fr_420px_1fr] min-h-screen"
+        class="bg-neutral-100 md:grid md:grid-cols-[1fr_420px_1fr] min-h-screen overflow-x-hidden"
     >
         <aside class="hidden md:block"></aside>
 
-        <div id="app" class="relative"></div>
+        <!-- 中央カラム wrapper -->
+        <div class="relative md:col-start-2 md:col-end-3">
+            <div id="app"></div>
+            <div id="mobile-menu-container"></div>
+        </div>
 
         <aside class="hidden md:block"></aside>
 
+        <script type="module" src="/src/star.js"></script>
         <script type="module" src="/src/main.js"></script>
+        <script type="module" src="/src/tab.js"></script>
     </body>
 </html>

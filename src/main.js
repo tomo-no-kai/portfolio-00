@@ -1,9 +1,12 @@
 // main.js
 import './style.css'
+import { initBackgroundGLB } from './backgroundGlb.js'
 
 document.querySelector('#app').innerHTML = `
   <section class="fixed top-0 left-0 w-full md:w-[420px] md:left-1/2 md:-translate-x-1/2 h-screen bg-main z-0">
-    <div class="h-full flex flex-col items-center justify-center text-white px-6 text-center">
+    <!-- 背景GLB用コンテナ -->
+    <div id="background-glb" class="absolute top-0 left-0 w-full h-full -z-10"></div>
+    <div class="h-full flex flex-col items-center justify-center text-white px-6 text-center relative z-10">
       <h1 class="text-4xl font-bold tracking-wide text-white">
         ${logo()}
       </h1>
@@ -21,19 +24,19 @@ document.querySelector('#app').innerHTML = `
       ${wave()}
     </div>
 
-    <section class="relative px-8 pt-10 pb-10">
-      <h2 class="text-5xl text-main mb-10 font-extralight">WORKS</h2>
-      <div id="works" class="space-y-6">
+    <section id="works" class="relative px-8 pt-10 pb-10">
+      <h2 class="text-5xl text-sub mb-10 font-extralight">WORKS</h2>
+      <div class="space-y-6">
         <div class="relative group cursor-pointer shadow-sm hover:shadow-md transition-shadow">
           <div class="aspect-[16/8] bg-[#d9d9d9] flex items-center justify-center text-white text-3xl tracking-[0.2em] font-light rounded-sm"></div>
         </div>
-        <div class="text-center pt-2 bg-main text-white border-2 border-main text-[14px] px-6 py-2 uppercase rounded-sm 
-            hover:bg-white hover:text-main transition-colors duration-500">view all</div>
+          <div class="text-center pt-2 border-2 border-sub text-[14px] px-6 py-2 uppercase rounded-sm
+            text-white bg-sub hover:text-sub hover:bg-white transition-colors duration-500">view all</div>
       </div>
     </section>
 
-    <section class="px-8 py-12 bg-neutral-50/50">
-      <h2 class="text-5xl text-main mb-10 tracking-tighter font-extralight">ABOUT</h2>
+    <section id="about" class="px-8 py-12 bg-neutral-50/50">
+      <h2 class="text-5xl text-sub mb-10 tracking-tighter font-extralight">ABOUT</h2>
       <div class="space-y-1">
         <p class="text-[10px] font-bold text-gray-800 tracking-[0.2em] uppercase font-extralight">Kanno Tomoka</p>
         <h3 class="text-3xl font-bold mb-8 font-extralight">菅野 友香</h3>
@@ -48,7 +51,7 @@ document.querySelector('#app').innerHTML = `
             ディーター・ラムスの「Less, but better（より少なく、しかしより良く）」という思想に影響を受け、見る人に親切な「やさしいデザイン」を信念に活動しています。
           </p>
           <p>
-            ミニマルな機能美の中に、「かわいいスパイス」を添えるのが好きです。
+            趣味では、ミニマルな機能美の中に、「かわいいスパイス」を添えたデザインを好み、よく楽しんでいます。
           </p>
         </div>
       </div>
@@ -77,24 +80,24 @@ document.querySelector('#app').innerHTML = `
       </div>
     </section>
 
-    <section class="px-8 py-12 pb-20 relative z-10">
-      <h2 class="text-5xl text-main mb-10 font-extralight">CONTACT</h2>
+    <section id="contact" class="px-8 py-12 pb-20 relative z-10">
+      <h2 class="text-5xl text-sub mb-10 font-extralight">CONTACT</h2>
       <div class="space-y-2 text-sm">
         <p class="flex items-center gap-4">
           <span class="text-[10px] text-gray-400 w-20 uppercase tracking-tighter">Mail</span>
-          <a href="mailto:kanno.tomoka@gmail.com" class="font-light hover:text-main text-gray-700 underline decoration-gray-200 underline-offset-4 transition-colors">
+          <a href="mailto:kanno.tomoka@gmail.com" class="font-light hover:text-sub text-gray-700 underline decoration-gray-200 underline-offset-4 transition-colors">
             kanno.tomoka@gmail.com
           </a>
         </p>
         <p class="flex items-center gap-4">
           <span class="text-[10px] text-gray-400 w-20 uppercase tracking-tighter">GitHub</span>
-          <a href="https://github.com/tomo-no-kai" target="_blank" rel="noopener noreferrer" class="font-light text-gray-700 hover:text-main underline decoration-gray-200 underline-offset-4 transition-colors">
+          <a href="https://github.com/tomo-no-kai" target="_blank" rel="noopener noreferrer" class="font-light text-gray-700 hover:text-sub underline decoration-gray-200 underline-offset-4 transition-colors">
             @tomo-no-kai
           </a>
         </p>
         <p class="flex items-center gap-4">
           <span class="text-[10px] text-gray-400 w-20 uppercase tracking-tighter">illustration</span>
-          <a href="https://exlolita.tumblr.com/" target="_blank" rel="noopener noreferrer" class="font-light text-gray-700 hover:text-main underline decoration-gray-200 underline-offset-4 transition-colors">
+          <a href="https://exlolita.tumblr.com/" target="_blank" rel="noopener noreferrer" class="font-light text-gray-700 hover:text-sub underline decoration-gray-200 underline-offset-4 transition-colors">
             @exlolita
           </a>
         </p>
@@ -124,10 +127,20 @@ function logo() {
   `
 }
 
+// 背景GIFコンポーネント
+function BackgroundGif({ src, classes = "" }) {
+  return `
+    <div
+      class="w-full h-full bg-cover bg-center ${classes}"
+      style="background-image: url('${src}');"
+    ></div>
+  `;
+}
+
 // スクロール誘導コンポーネント
 function scrollIndicator() {
   return `
-    <div class="w-12 h-12 rounded-full border border-white flex items-center justify-center animate-bounce cursor-pointer hover:bg-white/10 transition-colors">
+    <div class="w-12 h-12 rounded-full border border-white flex items-center justify-center animate-bounce cursor-pointer">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="w-4 h-4"
@@ -141,3 +154,6 @@ function scrollIndicator() {
     </div>
   `
 }
+
+// section 内に配置した container に GLB をセット
+initBackgroundGLB('background-glb', '/inu.glb')
