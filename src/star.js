@@ -36,7 +36,7 @@ function createStar() {
 
 // 星を生成
 const stars = []
-const starCount = 100
+const starCount = 50
 for (let i = 0; i < starCount; i++) {
   const starEl = createStar()
   starContainer.appendChild(starEl)
