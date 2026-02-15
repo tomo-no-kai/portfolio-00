@@ -7,3 +7,14 @@
 :root {
   --color-main: #6366f1;
 }
+
+body {
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 見出しをよりラムスっぽく（細く、字間を詰める） */
+h2, h3, h4 {
+  letter-spacing: -0.05em;
+}
