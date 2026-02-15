@@ -1,5 +1,7 @@
 // detail.js
-import works from '../data/works.json' assert { type: 'json' }
+
+import '../src/css/style.css'
+import works from '../src/data/works.json' assert { type: 'json' }
 
 const params = new URLSearchParams(window.location.search)
 const id = params.get('id')
