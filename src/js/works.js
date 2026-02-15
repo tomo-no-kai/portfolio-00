@@ -4,7 +4,9 @@ import { WorkCard } from './components/worksCard.js'
 import { WorkCardGraphic } from './components/worksCardGraphic.js'
 import webWorks from '../data/works.json' assert { type: 'json' }
 import graphicWorks from '../data/graphicWorks.json' assert { type: 'json' }
+import { GraphicModal } from './components/GraphicModal.js'
 
+const modal = new GraphicModal()
 const container = document.getElementById('works-list')
 const tabWeb = document.getElementById('tab-web')
 const tabGraphic = document.getElementById('tab-graphic')
@@ -19,8 +21,8 @@ tabGraphic.addEventListener('click', () => renderWorks('graphic'))
 function renderWorks(type) {
   let works
 
+  // container とタブのクラスをリセット
   container.className = ''
-
   tabWeb.classList.remove('bg-sub', 'text-white')
   tabWeb.classList.add('bg-white', 'text-sub')
   tabGraphic.classList.remove('bg-sub', 'text-white')
@@ -39,6 +41,13 @@ function renderWorks(type) {
       ...work,
       thumbnails: work.thumbnails || [work.thumbnail]
     })).join('')
+
+    // カードにクリックイベントを追加
+    const cards = container.querySelectorAll('[data-images]')
+    cards.forEach(card => {
+      card.addEventListener('click', () => modal.open(JSON.parse(card.dataset.images)))
+    })
+
     tabGraphic.classList.add('bg-sub', 'text-white')
     tabGraphic.classList.remove('bg-white', 'text-sub')
   }

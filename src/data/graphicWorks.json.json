@@ -1,32 +1,37 @@
 [
   {
-    "title": "道南いちごミルク",
+    "title": "うめきた-Tech Base<br>ロゴ",
+    "category": ["GRAPHIC"],
+    "thumbnails": ["/works/G-umekita-thumb.png","/works/G-umekita-2.jpeg"]
+  },
+  {
+    "title": "道南いちごミルク<br>(非売品)",
     "category": ["GRAPHIC","PLANNING"],
-    "thumbnails": ["/works/G-milk-thumb.PNG"],
-    "page": "#"
+    "thumbnails": ["/works/G-milk-thumb.PNG"]
   },
   {
-    "title": "とらやチラシ(非公式)",
+    "title": "とらやチラシ (非公式)",
     "category": ["GRAPHIC"],
-    "thumbnails": ["/works/G-toraya-thumb.png"],
-    "page": "#"
+    "thumbnails": ["/works/G-toraya-thumb.png","/works/G-toraya-2.png"]
   },
   {
-    "title": "美専祭作品募集ポスター",
+    "title": "美専祭<br>作品募集ポスター",
     "category": ["GRAPHIC"],
-    "thumbnails": ["/works/G-bisen-thumb.PNG"],
-    "page": "#"
+    "thumbnails": ["/works/G-bisen-thumb.PNG"]
   },
   {
-    "title": "ぬいぐるみ病院リーフレット(非公式)",
+    "title": "わたしつじ<br>販促ポスター",
     "category": ["GRAPHIC"],
-    "thumbnails": ["/works/G-mituori-thumb.png"],
-    "page": "#"
+    "thumbnails": ["/works/G-wata-thumb.png"]
+  },
+  {
+    "title": "ぬいぐるみ病院<br>リーフレット (非公式)",
+    "category": ["GRAPHIC"],
+    "thumbnails": ["/works/G-mituori-thumb.png"]
   },
   {
     "title": "だっこあらポーチ",
     "category": ["GRAPHIC","PLANNING"],
-    "thumbnails": ["/works/G-kikaku-thumb.PNG"],
-    "page": "#"
+    "thumbnails": ["/works/G-kikaku-thumb.PNG"]
   }
 ]

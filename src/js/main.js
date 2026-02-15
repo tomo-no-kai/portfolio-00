@@ -84,8 +84,8 @@ document.querySelector('#app').innerHTML = `
       <div class="space-y-2 text-sm">
         <p class="flex items-center gap-4">
           <span class="text-[10px] text-gray-400 w-20 uppercase tracking-tighter">Mail</span>
-          <a href="mailto:kanno.tomoka@gmail.com" class="font-light hover:text-sub text-gray-700 underline decoration-gray-200 underline-offset-4 transition-colors">
-            kanno.tomoka@gmail.com
+          <a href="mailto:kanno.tomoka.1012@gmail.com" class="font-light hover:text-sub text-gray-700 underline decoration-gray-200 underline-offset-4 transition-colors">
+            kanno.tomoka.1012@gmail.com
           </a>
         </p>
         <p class="flex items-center gap-4">

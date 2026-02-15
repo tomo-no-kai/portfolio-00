@@ -9,7 +9,6 @@ starContainer.style.width = '100%'
 starContainer.style.height = '100%'
 starContainer.style.pointerEvents = 'none'
 starContainer.style.overflow = 'hidden'
-starContainer.style.zIndex = '9999'
 starContainer.style.opacity = '1.0'
 document.body.appendChild(starContainer)
 
