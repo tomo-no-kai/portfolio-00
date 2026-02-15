@@ -25,9 +25,10 @@ document.querySelector('#app').innerHTML = `
       <h2 class="text-5xl text-main mb-12 font-extralight">WORKS</h2>
       <div id="works" class="space-y-6">
         <div class="relative group cursor-pointer shadow-sm hover:shadow-md transition-shadow">
-          <div class="aspect-[16/8] bg-[#d9d9d9] flex items-center justify-center text-white text-3xl tracking-[0.2em] font-light"></div>
+          <div class="aspect-[16/8] bg-[#d9d9d9] flex items-center justify-center text-white text-3xl tracking-[0.2em] font-light rounded-sm"></div>
         </div>
-        <div class="text-center pt-2 bg-main text-white text-[14px] px-6 py-2 uppercase">view all</div>
+        <div class="text-center pt-2 bg-main text-white border-2 border-main text-[14px] px-6 py-2 uppercase rounded-sm 
+            hover:bg-white hover:text-main transition-colors duration-500">view all</div>
       </div>
     </section>
 
