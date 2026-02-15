@@ -2,5 +2,5 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/portfolio-00/',
+  base: './', // 相対パスに変更
 })
