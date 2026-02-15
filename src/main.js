@@ -22,7 +22,7 @@ document.querySelector('#app').innerHTML = `
     </div>
 
     <section class="relative px-8 pt-10 pb-10">
-      <h2 class="text-5xl text-main mb-12 font-extralight">WORKS</h2>
+      <h2 class="text-5xl text-main mb-10 font-extralight">WORKS</h2>
       <div id="works" class="space-y-6">
         <div class="relative group cursor-pointer shadow-sm hover:shadow-md transition-shadow">
           <div class="aspect-[16/8] bg-[#d9d9d9] flex items-center justify-center text-white text-3xl tracking-[0.2em] font-light rounded-sm"></div>
@@ -33,7 +33,7 @@ document.querySelector('#app').innerHTML = `
     </section>
 
     <section class="px-8 py-12 bg-neutral-50/50">
-      <h2 class="text-5xl text-main mb-12 tracking-tighter font-extralight">ABOUT</h2>
+      <h2 class="text-5xl text-main mb-10 tracking-tighter font-extralight">ABOUT</h2>
       <div class="space-y-1">
         <p class="text-[10px] font-bold text-gray-800 tracking-[0.2em] uppercase font-extralight">Kanno Tomoka</p>
         <h3 class="text-3xl font-bold mb-8 font-extralight">菅野 友香</h3>
