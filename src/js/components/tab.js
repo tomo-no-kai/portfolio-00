@@ -52,8 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="flex flex-col space-y-6 text-right pt-2">
         <a href="/" onclick="toggleMenu()" class="text-sub text-xl font-extralight hover:opacity-50 transition-opacity uppercase">Home</a>
         <a href="works.html" onclick="toggleMenu()" class="text-sub text-xl font-extralight hover:opacity-50 transition-opacity uppercase">Works</a>
-        <a href="/ #about" onclick="toggleMenu()" class="text-sub text-xl font-extralight hover:opacity-50 transition-opacity uppercase">About</a>
-        <a href="/ #contact" onclick="toggleMenu()" class="text-sub text-xl  font-extralight hover:opacity-50 transition-opacity uppercase">Contact</a>
+        <a href="/#about" onclick="toggleMenu()" class="text-sub text-xl font-extralight hover:opacity-50 transition-opacity uppercase">About</a>
+        <a href="/#contact" onclick="toggleMenu()" class="text-sub text-xl  font-extralight hover:opacity-50 transition-opacity uppercase">Contact</a>
       </div>
     </nav>
   `;
