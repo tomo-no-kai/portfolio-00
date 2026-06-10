@@ -6,6 +6,7 @@ const FADE_DURATION = 700; // 0.7秒
 
 import '../css/style.css'
 import webWorks from '../data/works.json' assert { type: 'json' }
+import skillIcons from '../data/skillIcons.json' assert { type: 'json' }
 
 const thumbnails = webWorks.map(work => work.thumbnail)
 
@@ -66,11 +67,10 @@ document.querySelector('#app').innerHTML = `
       <div class="mt-20">
         <h4 class="text-2xl font-light mb-8 text-gray-400 tracking-widest uppercase">Skill</h4>
 
-        <div class="grid grid-cols-5 gap-3 mb-10 w-full max-w-full">
-          ${Array(5).fill(0).map(() => `
-            <div class="aspect-square bg-[#e5e5e5] flex items-center justify-center text-[9px] text-gray-500 text-center p-1 leading-tight font-medium rounded-sm">
-              SKILL<br>ICON
-            </div>
+        <div class="grid grid-cols-6 gap-3 mb-10 w-full max-w-full">
+          ${skillIcons.map((skill) => `
+            <div class="aspect-square flex items-center justify-center text-[9px] text-gray-500 text-center p-1 leading-tight font-medium rounded-sm">
+              <img src="${skill.icon}" alt="${skill.name}" class="w-full h-full object-contain" />            </div>
           `).join('')}
         </div>
 
@@ -103,9 +103,9 @@ document.querySelector('#app').innerHTML = `
         </a>
         </p>
         <p class="flex items-center gap-4">
-          <span class="text-[10px] text-gray-400 w-20 uppercase tracking-tighter">illustration</span>
-          <a href="https://exlolita.tumblr.com/" target="_blank" rel="noopener noreferrer" class="font-light text-gray-700 hover:text-sub underline decoration-gray-200 underline-offset-4 transition-colors">
-            @exlolita
+          <span class="text-[10px] text-gray-400 w-20 uppercase tracking-tighter">X</span>
+          <a href="https://x.com/UowoU_inuDog" target="_blank" rel="noopener noreferrer" class="font-light text-gray-700 hover:text-sub underline decoration-gray-200 underline-offset-4 transition-colors">
+            @UowoU_inuDog
           </a>
         </p>
       </div>

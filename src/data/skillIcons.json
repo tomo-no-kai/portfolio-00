@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "HTML",
+    "icon": "/skillIcons/html.svg"
+  },
+  {
+    "id": 2,
+    "name": "CSS",
+    "icon": "/skillIcons/css.svg"
+  },
+  {
+    "id": 3,
+    "name": "JavaScript",
+    "icon": "/skillIcons/js.svg"
+  },
+  {
+    "id": 4,
+    "name": "Illustrator",
+    "icon": "/skillIcons/ai.svg"
+  },
+  {
+    "id": 5,
+    "name": "Photoshop",
+    "icon": "/skillIcons/ps.svg"
+  },
+  {
+    "id": 6,
+    "name": "Figma",
+    "icon": "/skillIcons/figma.svg"
+  }
+]

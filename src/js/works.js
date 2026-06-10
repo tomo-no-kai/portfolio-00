@@ -30,7 +30,7 @@ function renderWorks(type) {
 
   if (type === 'web') {
     works = webWorks
-    container.classList.add('flex','flex-col','space-y-8')
+    container.classList.add('flex', 'flex-col', 'space-y-8')
     container.innerHTML = works.map(work => WorkCard(work)).join('')
     tabWeb.classList.add('bg-sub', 'text-white')
     tabWeb.classList.remove('bg-white', 'text-sub')
