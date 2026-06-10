@@ -23,14 +23,14 @@ if (!work) {
   const link = document.createElement('a')
   link.href = work.page
   link.target = '_blank'
-  link.className = 'block w-full h-full relative group'
+  link.className = 'block relative group'
   thumb.replaceWith(link)
   link.appendChild(thumb)
 
   thumb.src = work.thumbnail
   thumb.alt = work.title
   thumb.className =
-    'w-full h-full object-cover rounded-sm transition-transform duration-500'
+    'w-full h-auto rounded-sm transition-transform duration-500'
 
   // hover overlay
   const overlay = document.createElement('div')
