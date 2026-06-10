@@ -19,9 +19,9 @@ document.querySelector('#app').innerHTML = `
       <p class="mt-4 text-sm opacity-80 leading-relaxed">
         Creative Web & Graphic Design Portfolio
       </p>
-      <div class="absolute bottom-20">
+      <a href="works-section" class="absolute bottom-20 block">
         ${scrollIndicator()}
-      </div>
+      </a>
     </div>
   </section>
 
@@ -31,7 +31,7 @@ document.querySelector('#app').innerHTML = `
     </div>
 
     <section id="works" class="relative px-8 pt-10 pb-10">
-      <h2 class="text-5xl text-sub mb-10 font-extralight">WORKS</h2>
+      <h2 id="works-section" class="text-5xl text-sub mb-10 font-extralight">WORKS</h2>
       <div class="space-y-6">
       <div id="works-slideshow"
         class="aspect-[16/8] relative overflow-hidden rounded-sm group-hover:scale-[1.02] duration-500">
