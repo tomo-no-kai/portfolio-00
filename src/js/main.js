@@ -19,7 +19,7 @@ document.querySelector('#app').innerHTML = `
       <p class="mt-4 text-sm opacity-80 leading-relaxed">
         Creative Web & Graphic Design Portfolio
       </p>
-      <a href="works-section" class="absolute bottom-20 block">
+      <a href="#works-section" class="absolute bottom-20 block">
         ${scrollIndicator()}
       </a>
     </div>

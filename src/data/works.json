@@ -42,7 +42,8 @@
     "catchphrase": "あなたを見守る、みまもるみ。",
     "description": "スマホ用セルフケアアプリ。<br>セルフケアに対する心理的ハードルを下げることを目標に制作しました。<br>あなたの日々を見守ってくれるキャラクター、「みまもるみ」の圧のないビジュアルと、画面の下半分に操作ボタンを集約した、片手でつかいやすいUIがアピールポイントです。<br><br>使用技術<br>デザイン&emsp;&emsp;&#65306;Figma/Procreate<br>コーディング&#65306;Next.js/TailwindCSS",
     "images": [
-      "/works/MM-2.png"
+      "/works/MM-2.png",
+      "/works/MM-3.png"
     ],
     "page": "https://mimamorumi-l9ek.vercel.app/"
   },
