@@ -1,4 +1,9 @@
 // main.js
+
+// スライドショーのタイミング
+const SLIDESHOW_INTERVAL = 3000; // 3秒
+const FADE_DURATION = 700; // 0.7秒
+
 import '../css/style.css'
 import webWorks from '../data/works.json' assert { type: 'json' }
 
@@ -164,8 +169,7 @@ const container = document.getElementById('works-slideshow')
 thumbnails.forEach((src, index) => {
   const img = document.createElement('img')
   img.src = src
-  img.className =
-    'absolute inset-0 w-full h-full object-cover transition-opacity duration-700'
+  img.className = `absolute inset-0 w-full h-full object-cover transition-opacity duration-[${FADE_DURATION}ms]`
   img.classList.add(index === 0 ? 'opacity-100' : 'opacity-0')
   container.appendChild(img)
 })
@@ -181,4 +185,4 @@ setInterval(() => {
 
   slides[current].classList.remove('opacity-0')
   slides[current].classList.add('opacity-100')
-}, 3000)
+}, SLIDESHOW_INTERVAL)

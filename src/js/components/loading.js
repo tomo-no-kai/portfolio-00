@@ -1,4 +1,10 @@
 // loading.js
+
+// ローディングのタイミング
+const TEXT_COLOR_CHANGE_DELAY = 1700;
+const LOADING_DURATION = 3400;
+const FADE_OUT_DURATION = 1200;
+
 const style = document.createElement('style');
 style.textContent = `
   #loader {
@@ -55,7 +61,7 @@ style.textContent = `
     100% { transform: translateY(0%); }
   }
 
-  /* 回転ではなく横うねり */
+  /* 横うねり */
   @keyframes wave-soft {
     0% {
       transform: translateX(-6%) translateY(0px) scaleX(1) scaleY(1);
@@ -102,11 +108,11 @@ window.addEventListener('load', () => {
 
   setTimeout(() => {
     text.classList.add('text-white-active');
-  }, 1700);
+  }, TEXT_COLOR_CHANGE_DELAY);
 
   setTimeout(() => {
-    loader.style.transition = 'opacity 1.2s ease';
+    loader.style.transition = `opacity ${FADE_OUT_DURATION / 1000}s ease`;
     loader.style.opacity = '0';
-    setTimeout(() => loader.remove(), 1200);
-  }, 3400);
+    setTimeout(() => loader.remove(), FADE_OUT_DURATION);
+  }, LOADING_DURATION);
 });
