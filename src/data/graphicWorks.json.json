@@ -1,32 +1,82 @@
 [
   {
+    "title": "DemoStage<br>ロゴ",
+    "category": [
+      "GRAPHIC"
+    ],
+    "thumbnails": [
+      "/works/G-DemoStage-thumb.png",
+      "/works/G-DemoStage-2.png",
+      "/works/G-DemoStage-3.png"
+    ]
+  },
+  {
     "title": "うめきた-Tech Base<br>ロゴ",
-    "category": ["GRAPHIC"],
-    "thumbnails": ["/works/G-umekita-thumb.png"]
+    "category": [
+      "GRAPHIC"
+    ],
+    "thumbnails": [
+      "/works/G-umekita-thumb.png",
+      "/works/G-umekita-2.jpeg",
+      "/works/G-umekita-3.png"
+    ]
+  },
+  {
+    "title": "THE HACK 2026",
+    "category": [
+      "GRAPHIC"
+    ],
+    "thumbnails": [
+      "/works/G-THE-HACK-thumb.png",
+      "/works/G-THE-HACK-2.png"
+    ]
   },
   {
     "title": "道南いちごミルク<br>(非売品)",
-    "category": ["GRAPHIC","PLANNING"],
-    "thumbnails": ["/works/G-milk-thumb.PNG"]
+    "category": [
+      "GRAPHIC",
+      "PLANNING"
+    ],
+    "thumbnails": [
+      "/works/G-milk-thumb.PNG"
+    ]
   },
   {
     "title": "とらやチラシ (非公式)",
-    "category": ["GRAPHIC"],
-    "thumbnails": ["/works/G-toraya-thumb.png","/works/G-toraya-2.png"]
+    "category": [
+      "GRAPHIC"
+    ],
+    "thumbnails": [
+      "/works/G-toraya-thumb.png",
+      "/works/G-toraya-2.png"
+    ]
   },
   {
     "title": "美専祭<br>作品募集ポスター",
-    "category": ["GRAPHIC"],
-    "thumbnails": ["/works/G-bisen-thumb.PNG"]
+    "category": [
+      "GRAPHIC"
+    ],
+    "thumbnails": [
+      "/works/G-bisen-thumb.PNG"
+    ]
   },
   {
     "title": "ぬいぐるみ病院<br>リーフレット (非公式)",
-    "category": ["GRAPHIC"],
-    "thumbnails": ["/works/G-mituori-thumb.png"]
+    "category": [
+      "GRAPHIC"
+    ],
+    "thumbnails": [
+      "/works/G-mituori-thumb.png"
+    ]
   },
   {
     "title": "だっこあらポーチ",
-    "category": ["GRAPHIC","PLANNING"],
-    "thumbnails": ["/works/G-kikaku-thumb.PNG"]
+    "category": [
+      "GRAPHIC",
+      "PLANNING"
+    ],
+    "thumbnails": [
+      "/works/G-kikaku-thumb.PNG"
+    ]
   }
 ]

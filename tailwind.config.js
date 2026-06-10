@@ -1,10 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./works.html",
-    "./src/**/*.{js,ts}",
-    "./public/**/*.{html,js}"
+    "./*.html",
+    "./src/**/*.js",
   ],
   safelist: ['hover:text-sub'],
   theme: {
